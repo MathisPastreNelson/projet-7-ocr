@@ -1,10 +1,10 @@
 import React from 'react'
 import bannerAbout from '../assets/banner1.png'
 
-const BannerHome = () => {
+const BannerAbout = () => {
     return <div>
         <img className="bannerAboutImg" src={bannerAbout} alt="" />
     </div>
 }
 
-export default BannerHome;
+export default BannerAbout;

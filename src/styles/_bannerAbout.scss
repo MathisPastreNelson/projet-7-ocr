@@ -1,10 +1,9 @@
 .bannerAboutImg {
     width: 90%;
     display: flex;
-    position: absolute;
     height: 230px;
-    left: 5%;
-    top: 150px;
     object-fit: cover;
     border-radius: 25px;
+    margin: auto;
+    margin-top: 25px;
 }
