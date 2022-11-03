@@ -14,4 +14,22 @@
 
 .navLink {
   padding: 40px;
+}
+
+.footerKasa {
+  background-color: black;
+  align-items: center;
+  height: 150px;
+}
+
+.logoFooter {
+  display: flex;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.pFooter {
+  color: white;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
