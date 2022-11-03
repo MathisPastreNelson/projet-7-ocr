@@ -1,0 +1,21 @@
+.bannerImg {
+    width: 90%;
+    display: flex;
+    position: absolute;
+    height: 230px;
+    left: 5%;
+    top: 150px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.bannerTitle {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 95px;
+}

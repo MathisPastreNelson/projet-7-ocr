@@ -1,11 +1,14 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
 .headerKasa {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logoHeader {
-  margin: 0 40px;
+  width: 90%;
+  margin: auto;
 }
 
 .margin {
@@ -13,7 +16,78 @@
 }
 
 .navLink {
-  padding: 40px;
+  padding: 40px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bannerImg {
+  width: 90%;
+  display: flex;
+  position: absolute;
+  height: 230px;
+  left: 5%;
+  top: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.bannerTitle {
+  position: relative;
+  color: white;
+  font-weight: 400;
+  font-size: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 95px;
+}
+
+.bannerAboutImg {
+  width: 90%;
+  display: flex;
+  position: absolute;
+  height: 230px;
+  left: 5%;
+  top: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.bigFont {
+  font-size: 288px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: #FF6060;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.NotExistP {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  color: #FF6060;
+  margin-bottom: 120px;
+}
+
+.returnHome {
+  color: #FF6060;
+  display: flex;
+  justify-content: center;
 }
 
 .footerKasa {

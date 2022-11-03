@@ -4,7 +4,7 @@ import logoFooter from '../assets/logoInvis.png'
 const Footer = () => {
     return <div className="footerKasa">
         <img className="logoFooter" src={logoFooter} alt="" />
-        <p className="pFooter">2020 Kasa. All rights reserverd</p>
+        <p className="pFooter">© 2020 Kasa. All rights reserved</p>
     </div>
 }
 

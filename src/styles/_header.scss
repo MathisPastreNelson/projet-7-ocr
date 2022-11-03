@@ -2,10 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logoHeader {
-    margin: 0 40px;
+    width: 90%;
+    margin: auto;
 }
 
 .margin {
@@ -13,5 +11,16 @@
 }
 
 .navLink {
-    padding: 40px;
+    padding: 40px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
