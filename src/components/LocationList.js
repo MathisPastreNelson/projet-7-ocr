@@ -1,12 +1,16 @@
 import React from 'react';
-import data from '../assets/logements.json';
-console.log(data);
+import dataList from '../assets/logements.json';
+console.log(dataList);
 
 
-const LocationList = () => {
+const Location = () => {
     return <div className="locationContainer">
-        <p></p>
+        {dataList.map((data) => (
+            <li className="TEST" key={data.id}>
+                {data.title}
+            </li>
+        ))}
     </div>
 }
 
-export default LocationList;
+export default Location;
