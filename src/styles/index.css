@@ -34,25 +34,24 @@ a:hover {
 .bannerImg {
   width: 90%;
   display: flex;
-  position: absolute;
   height: 230px;
-  left: 5%;
-  top: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 25px;
+  background-image: url(../assets/banner2.png);
+  border-radius: 0 0 25px 25px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
 
 .bannerTitle {
-  position: relative;
   color: white;
   font-weight: 400;
   font-size: 50px;
   display: flex;
   width: 100%;
   justify-content: center;
-  top: 70px;
-  margin-bottom: 207px;
+  align-items: center;
 }
 
 .bannerAboutImg {
