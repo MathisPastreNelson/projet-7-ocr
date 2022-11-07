@@ -5,7 +5,23 @@
     background-color: #F7F7F7;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 225px;
+    margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationCard {
+    background-color: salmon;
+    width: 25%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationlist {
+    list-style: none;
 }
