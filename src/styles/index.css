@@ -83,12 +83,20 @@ a:hover {
 
 .locationCard {
   background-color: salmon;
-  width: 25%;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.locationImg {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .locationlist {
