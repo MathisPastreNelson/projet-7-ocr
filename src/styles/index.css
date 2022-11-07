@@ -32,13 +32,15 @@ a:hover {
 }
 
 .bannerImg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/banner2.png");
   width: 90%;
   display: flex;
   height: 230px;
-  background-image: url(../assets/banner2.png);
-  border-radius: 0 0 25px 25px;
+  border-radius: 25px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
@@ -68,6 +70,7 @@ a:hover {
 .locationContainer {
   width: 90%;
   display: flex;
+  flex-wrap: wrap;
   background-color: #F7F7F7;
   margin-left: auto;
   margin-right: auto;

@@ -6,7 +6,7 @@ console.log(dataList);
 const Location = () => {
     return <div className="locationContainer">
         {dataList.map((data) => (
-            <li className="TEST" key={data.id}>
+            <li className="locationlist" key={data.id}>
                 {data.title}
             </li>
         ))}
