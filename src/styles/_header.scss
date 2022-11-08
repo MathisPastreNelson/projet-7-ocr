@@ -25,3 +25,20 @@
 .navLinkHeader-nav:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .headerKasa {
+        margin-top: 0;
+    }
+
+    .logoHeader {
+        width: 130px;
+    }
+
+    .navLinkHeader-nav {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+
+}

@@ -39,4 +39,29 @@
 
 .locationTitle {
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .locationContainer {
+        background-color: white;
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+
+    .locationCard {
+        width: 100%;
+        height: 225px;
+        margin: 17px 0;
+    }
+
+    .locationImg {
+        width: 100%;
+        height: 180px;
+    }
 }

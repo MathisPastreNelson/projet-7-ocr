@@ -10,3 +10,9 @@
     margin-right: auto;
     max-width: 1450px;
 }
+
+@media (max-width: 768px) {
+    .bannerAboutImg {
+        margin-top: 0;
+    }
+}
