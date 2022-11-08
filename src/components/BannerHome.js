@@ -1,5 +1,4 @@
 import React from 'react'
-import bannerHome from '../assets/banner2.png'
 
 const BannerHome = () => {
     return <div className="bannerImg">

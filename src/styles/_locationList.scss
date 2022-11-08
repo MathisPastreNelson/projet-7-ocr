@@ -2,6 +2,7 @@
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 0;
     background-color: #F7F7F7;
     margin-left: auto;
     margin-right: auto;
@@ -13,22 +14,26 @@
 }
 
 .locationCard {
-    background-color: salmon;
-    width: 150px;
-    height: 150px;
+    background: rgb(173, 2, 2);
+    background: linear-gradient(360deg, rgba(173, 2, 2, 1) 0%, rgba(255, 96, 96, 1) 50%);
+    width: 425px;
+    height: 425px;
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 .locationImg {
-    width: 150px;
-    height: 150px;
+    width: 425px;
+    height: 400px;
     object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
-.locationlist {
-    list-style: none;
+.locationTitle {
+    color: white;
 }

@@ -12,22 +12,19 @@ body {
   margin-top: 25px;
 }
 
-.margin {
-  margin: 0 50px;
-}
-
-.navLink {
+.navLinkHeader {
   padding: 40px 0;
 }
 
-a {
+.navLinkHeader-nav {
+  margin: 0 50px;
   text-decoration: none;
   color: #FF6060;
   font-weight: 500;
   font-size: 25px;
 }
 
-a:hover {
+.navLinkHeader-nav:hover {
   text-decoration: underline;
 }
 
@@ -71,6 +68,7 @@ a:hover {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 0;
   background-color: #F7F7F7;
   margin-left: auto;
   margin-right: auto;
@@ -82,25 +80,29 @@ a:hover {
 }
 
 .locationCard {
-  background-color: salmon;
-  width: 150px;
-  height: 150px;
+  background: rgb(173, 2, 2);
+  background: linear-gradient(360deg, rgb(173, 2, 2) 0%, rgb(255, 96, 96) 50%);
+  width: 425px;
+  height: 425px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .locationImg {
-  width: 150px;
-  height: 150px;
+  width: 425px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
-.locationlist {
-  list-style: none;
+.locationTitle {
+  color: white;
 }
 
 .bigFont {

@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
     return <div className="headerKasa">
         <img className="logoHeader" src={logo} alt="" />
-        <div className="navLink">
-            <NavLink className="margin" to="/">Accueil</NavLink>
-            <NavLink className="margin" to="/about">A propos</NavLink>
+        <div className="navLinkHeader">
+            <NavLink className="navLinkHeader-nav" to="/">Accueil</NavLink>
+            <NavLink className="navLinkHeader-nav" to="/about">A propos</NavLink>
         </div>
     </div>
 }

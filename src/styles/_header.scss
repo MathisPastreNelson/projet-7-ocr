@@ -7,21 +7,18 @@
     margin-top: 25px;
 }
 
-.margin {
-    margin: 0 50px;
-}
-
-.navLink {
+.navLinkHeader {
     padding: 40px 0;
 }
 
-a {
+.navLinkHeader-nav {
+    margin: 0 50px;
     text-decoration: none;
     color: #FF6060;
     font-weight: 500;
     font-size: 25px;
 }
 
-a:hover {
+.navLinkHeader-nav:hover {
     text-decoration: underline;
 }
