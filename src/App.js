@@ -1,7 +1,6 @@
 import React from 'react';
 /* Package pour la création/gestion des routes*/
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-fetch('')
 
 import Home from "./pages/Home"
 import Logement from "./pages/Logement"
@@ -15,7 +14,7 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/logement" element={<Logement />} />
+                    <Route path="/logement/:id" element={<Logement />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/*" element={<NotFoundPage />} />
                 </Routes>
