@@ -119,8 +119,8 @@ body {
 }
 
 .locationCard {
-  background: rgb(173, 2, 2);
-  background: linear-gradient(360deg, rgb(173, 2, 2) 0%, rgb(255, 96, 96) 50%);
+  background: rgb(199, 34, 34);
+  background: linear-gradient(360deg, rgb(216, 60, 60) 0%, rgb(255, 96, 96) 50%);
   width: 425px;
   height: 425px;
   margin: 20px;
