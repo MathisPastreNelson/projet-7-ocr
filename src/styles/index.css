@@ -182,6 +182,7 @@ body {
   border: none;
   border-radius: 5px;
   align-items: center;
+  cursor: pointer;
 }
 
 .toggle-arrow {
