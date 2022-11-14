@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 const LogementCarousel = () => {
     return (
-        <div>Test</div>
+        <div>Emplacement du futur carousel</div>
     )
 }
 
