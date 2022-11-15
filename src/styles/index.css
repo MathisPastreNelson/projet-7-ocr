@@ -222,6 +222,13 @@ body {
     width: 90%;
   }
 }
+.test {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
 .bigFont {
   font-size: 200px;
   font-weight: 700;
