@@ -5,13 +5,12 @@ import { useParams } from "react-router-dom";
 
 
 const LogementCarousel = () => {
-    const completeId = useParams();
-    console.log(completeId);
-    console.log(dataList[2]);
+    const urlParams = useParams();
+    const logementData = dataList.filter((data) => data.id === urlParams.id);
+    console.log(logementData);
+
     return (
-        dataList.map((imgLocation) =>
-            <div className="test" > {imgLocation.title}</div >
-        )
+        <div className="test">test</div>
     )
 }
 
