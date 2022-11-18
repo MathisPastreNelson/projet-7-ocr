@@ -2,6 +2,8 @@ import React from "react";
 import dataList from '../assets/logements.json';
 import { useState } from 'react'
 import { useParams } from "react-router-dom";
+import arrowLeft from "../assets/arrowLeft.png"
+import arrowRight from "../assets/arrowRight.png"
 
 
 const LogementCarousel = () => {
@@ -19,13 +21,18 @@ const LogementCarousel = () => {
     console.log("Title", logementTitle);
     /* Récupération des data Pictures */
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
-    console.log("Pictures", logementPictures);
+    console.log("Pictures", logementPictures[0]);
+
 
     return (
         <div className="carouselContainer">
-            {logementPictures[0].map((picture) => (
-                <img className="carouselImg" key={picture} src={picture} alt={logementTitle} />
-            ))}
+            {/* {logementPictures[0].map((picture) => ( */}
+            {/* key={picture}  A AJOUTER DANS LA DIV EN CAS DE MAP */}
+            <div className="carouselImg" style={{ backgroundImage: `url(${logementPictures[0][0]})` }}>
+                <img className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
+                <img className="arrowRight" src={arrowRight} alt="Photo suivante" />
+            </div>
+            {/* ))} */}
         </div>
     )
 }
