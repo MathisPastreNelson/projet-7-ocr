@@ -19,12 +19,14 @@ const LogementCarousel = () => {
     console.log("Title", logementTitle);
     /* Récupération des data Pictures */
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
-    console.log("Pictures", logementPictures[0][0]);
+    console.log("Pictures", logementPictures);
 
     return (
-        logementPictures.map((picture) => (
-            <img className="test" src={picture} alt="Photos des appartements" />
-        ))
+        <div className="carouselContainer">
+            {logementPictures[0].map((picture) => (
+                <img className="carouselImg" key={picture} src={picture} alt={logementTitle} />
+            ))}
+        </div>
     )
 }
 
