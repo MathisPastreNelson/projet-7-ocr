@@ -52,8 +52,12 @@ const LogementCarousel = () => {
                 backgroundSize: "cover",
                 backgroundImage: `url(${logementPictures[0][currentIndex]})`
             }}>
-                <img onClick={carouselDownScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
-                <img onClick={carouselUpScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
+                <div className="carouselSwitchArrows">
+
+                    <img onClick={carouselDownScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
+                    <img onClick={carouselUpScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
+                </div>
+                <p className="carouselCounter">{currentIndex + 1}/{logementPictures[0].length}</p>
             </div>
             {/* ))} */}
         </div>
