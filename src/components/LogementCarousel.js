@@ -23,14 +23,37 @@ const LogementCarousel = () => {
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
     console.log("Pictures", logementPictures[0]);
 
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const backToFirst = logementPictures[0].length;
+    console.log("Total d'image", backToFirst);
+
+    const carouselDownScrolling = () => {
+        if (currentIndex < 1) {
+            return setCurrentIndex(backToFirst - 1)
+        }
+        return setCurrentIndex(currentIndex - 1)
+    }
+    const carouselUpScrolling = () => {
+        if (currentIndex === logementPictures[0].length - 1) {
+            return setCurrentIndex(0)
+        }
+        return setCurrentIndex(currentIndex + 1)
+    }
+
+
 
     return (
         <div className="carouselContainer">
             {/* {logementPictures[0].map((picture) => ( */}
             {/* key={picture}  A AJOUTER DANS LA DIV EN CAS DE MAP */}
-            <div className="carouselImg" style={{ backgroundImage: `url(${logementPictures[0][0]})` }}>
-                <img className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
-                <img className="arrowRight" src={arrowRight} alt="Photo suivante" />
+            <div className="carouselImg" style={{
+                backgroundPositionY: "center",
+                backgroundPositionX: "center",
+                backgroundSize: "cover",
+                backgroundImage: `url(${logementPictures[0][currentIndex]})`
+            }}>
+                <img onClick={carouselDownScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
+                <img onClick={carouselUpScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
             </div>
             {/* ))} */}
         </div>
