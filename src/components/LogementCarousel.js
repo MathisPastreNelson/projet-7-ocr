@@ -11,14 +11,7 @@ const LogementCarousel = () => {
     const urlParams = useParams();
     /* Récupération du produit dans la liste complete grâce à son ID et à la méthode filter */
     const logementData = dataList.filter((data) => data.id === urlParams.id);
-    console.log("Données complètes = ", logementData)
 
-    /* Récupération des data ID */
-    const logementId = logementData.map((logementData, id) => id = logementData.id)
-    console.log("ID", logementId);
-    /* Récupération des data Titres */
-    const logementTitle = logementData.map((logementData, title) => title = logementData.title)
-    console.log("Title", logementTitle);
     /* Récupération des data Pictures */
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
     console.log("Pictures", logementPictures[0]);
@@ -40,28 +33,44 @@ const LogementCarousel = () => {
         return setCurrentIndex(currentIndex + 1)
     }
 
+    // Si le nombre d'image est supérieur à 1 on affiche le carousel
+    if (backToFirst > 1) {
+        return (
+            <div className="carouselContainer">
+                {/* {logementPictures[0].map((picture) => ( */}
+                {/* key={picture}  A AJOUTER DANS LA DIV EN CAS DE MAP */}
+                <div className="carouselImg" style={{
+                    backgroundPositionY: "center",
+                    backgroundPositionX: "center",
+                    backgroundSize: "cover",
+                    backgroundImage: `url(${logementPictures[0][currentIndex]})`
+                }}>
+                    <div className="carouselSwitchArrows">
 
-
-    return (
-        <div className="carouselContainer">
-            {/* {logementPictures[0].map((picture) => ( */}
-            {/* key={picture}  A AJOUTER DANS LA DIV EN CAS DE MAP */}
-            <div className="carouselImg" style={{
-                backgroundPositionY: "center",
-                backgroundPositionX: "center",
-                backgroundSize: "cover",
-                backgroundImage: `url(${logementPictures[0][currentIndex]})`
-            }}>
-                <div className="carouselSwitchArrows">
-
-                    <img onClick={carouselDownScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
-                    <img onClick={carouselUpScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
+                        <img onClick={carouselDownScrolling} className="arrowLeft" src={arrowLeft} alt="Photo précédente" />
+                        <img onClick={carouselUpScrolling} className="arrowRight" src={arrowRight} alt="Photo suivante" />
+                    </div>
+                    <p className="carouselCounter">{currentIndex + 1}/{logementPictures[0].length}</p>
                 </div>
-                <p className="carouselCounter">{currentIndex + 1}/{logementPictures[0].length}</p>
+                {/* ))} */}
             </div>
-            {/* ))} */}
-        </div>
-    )
+        )
+    } else {
+        return (
+            <div className="carouselContainer">
+                {/* {logementPictures[0].map((picture) => ( */}
+                {/* key={picture}  A AJOUTER DANS LA DIV EN CAS DE MAP */}
+                <div className="carouselImg" style={{
+                    backgroundPositionY: "center",
+                    backgroundPositionX: "center",
+                    backgroundSize: "cover",
+                    backgroundImage: `url(${logementPictures[0][currentIndex]})`
+                }}>
+                </div>
+                {/* ))} */}
+            </div>
+        )
+    }
 }
 
 export default LogementCarousel;
