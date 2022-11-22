@@ -10,14 +10,12 @@ import dataList from '../assets/logements.json';
 
 const Logement = () => {
     /* Récupération de l'ID grâce à l'URL */
-    const urlParams = useParams();
+    let { id } = useParams()
     /* Récupération du produit dans la liste complete grâce à son ID et à la méthode filter */
-    const logementData = dataList.filter((data) => data.id === urlParams.id);
-    console.log("Les infos globales du logement = ", logementData)
-    /* Récupération des data Pictures */
-    const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
-    console.log("Pictures = ", logementPictures[0]);
-
+    let arrayOfDataLogement = dataList.filter(logement => logement.id === id)
+    // Suppression de l'array pour sortir des datas sans le [0]
+    let logement = arrayOfDataLogement[0]
+    console.log(logement)
 
     return (
         <div>
