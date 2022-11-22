@@ -225,7 +225,7 @@ body {
 .carouselContainer {
   height: 450px;
   width: 90%;
-  margin: 0 auto 20px;
+  margin: 0 auto 5px;
   display: flex;
   justify-content: center;
   max-width: 1450px;
@@ -263,6 +263,19 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: -50px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1450px;
+}
+
+.nameNote {
+  display: flex;
+  flex-direction: column;
 }
 
 .bigFont {

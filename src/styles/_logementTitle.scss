@@ -1,0 +1,12 @@
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1450px;
+}
+
+.nameNote {
+    display: flex;
+    flex-direction: column;
+}

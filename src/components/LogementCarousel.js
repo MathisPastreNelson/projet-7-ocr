@@ -14,15 +14,15 @@ const LogementCarousel = () => {
 
     /* Récupération des data Pictures */
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
-    console.log("Pictures", logementPictures[0]);
+    console.log("Les urls des images du carousel = ", logementPictures[0]);
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const backToFirst = logementPictures[0].length;
-    console.log("Total d'image", backToFirst);
+    const imageNumber = logementPictures[0].length;
+    console.log("Total d'image = ", imageNumber);
 
     const carouselDownScrolling = () => {
         if (currentIndex < 1) {
-            return setCurrentIndex(backToFirst - 1)
+            return setCurrentIndex(imageNumber - 1)
         }
         return setCurrentIndex(currentIndex - 1)
     }
@@ -34,7 +34,7 @@ const LogementCarousel = () => {
     }
 
     // Si le nombre d'image est supérieur à 1 on affiche le carousel
-    if (backToFirst > 1) {
+    if (imageNumber > 1) {
         return (
             <div className="carouselContainer">
                 <div className="carouselImg" style={{
