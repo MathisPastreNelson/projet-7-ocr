@@ -10,3 +10,37 @@
     display: flex;
     flex-direction: column;
 }
+
+.titleLogement {
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.localisationLogement {
+    color: #FF6060;
+}
+
+.logementTagsContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logementTags {
+    background-color: #FF6060;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    margin-right: 10px;
+    height: 25px;
+}
+
+.logementOwner {
+    color: #FF6060;
+}
+
+.logementRating {
+    color: #FF6060;
+}
