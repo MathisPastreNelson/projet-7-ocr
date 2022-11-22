@@ -1,8 +1,9 @@
 import React from 'react'
-import dataList from '../assets/logements.json';
 
 const LogementTitle = ({ logementName, logementLocation, tags, logementOwner, logementRating }) => {
-    console.log(logementOwner)
+    const range = [1, 2, 3, 4, 5]
+
+    console.log(logementRating)
     return <div className="titleContainer">
         <div>
             <h2 className="titleLogement">{logementName}</h2>
