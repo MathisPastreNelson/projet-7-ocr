@@ -320,6 +320,10 @@ body {
   color: #FF6060;
 }
 
+.starContainer {
+  background-color: salmon;
+}
+
 .bigFont {
   font-size: 200px;
   font-weight: 700;
