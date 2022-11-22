@@ -16,12 +16,13 @@ const Logement = () => {
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
     console.log("Data global du logement = ", logement)
+    console.log(logement.title)
 
     return (
         <div>
             <Header />
             <LogementCarousel />
-            <LogementTitle />
+            <LogementTitle logementName={logement.title} logementLocation={logement.location} tags={logement.tags} />
             <Footer />
         </div>
     );
