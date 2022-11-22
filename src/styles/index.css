@@ -265,6 +265,14 @@ body {
   margin-top: -50px;
 }
 
+@media (max-width: 1036px) {
+  .arrowLeft {
+    height: 8%;
+  }
+  .arrowRight {
+    height: 8%;
+  }
+}
 .titleContainer {
   display: flex;
   justify-content: space-between;
