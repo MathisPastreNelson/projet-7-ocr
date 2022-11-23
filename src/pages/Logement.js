@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import LogementCarousel from '../components/LogementCarousel';
 import LogementTitle from '../components/LogementTitle';
+import LogementCollapse from '../components/LogementCollapse';
 import Footer from '../components/Footer';
 
 import dataList from '../assets/logements.json';
@@ -23,6 +24,7 @@ const Logement = () => {
             <Header />
             <LogementCarousel />
             <LogementTitle logementName={logement.title} logementLocation={logement.location} tags={logement.tags} logementOwner={logement.host} logementOwnerPhoto={logement.host.picture} logementRating={logement.rating} />
+            <LogementCollapse />
             <Footer />
         </div>
     );

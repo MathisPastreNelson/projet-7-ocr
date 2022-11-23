@@ -402,6 +402,14 @@ body {
     margin: 0 2px;
   }
 }
+.collapseContainer {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  background-color: salmon;
+  text-align: center;
+}
+
 .bigFont {
   font-size: 200px;
   font-weight: 700;
