@@ -22,7 +22,7 @@ const Logement = () => {
         <div>
             <Header />
             <LogementCarousel />
-            <LogementTitle logementName={logement.title} logementLocation={logement.location} tags={logement.tags} logementOwner={logement.host} logementRating={logement.rating} />
+            <LogementTitle logementName={logement.title} logementLocation={logement.location} tags={logement.tags} logementOwner={logement.host} logementOwnerPhoto={logement.host.picture} logementRating={logement.rating} />
             <Footer />
         </div>
     );

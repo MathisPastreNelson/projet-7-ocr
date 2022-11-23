@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 1036px) {
+    .carouselContainer {
+        height: 300px;
+    }
+
     .arrowLeft {
         height: 8%;
     }

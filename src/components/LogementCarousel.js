@@ -14,11 +14,11 @@ const LogementCarousel = () => {
 
     /* Récupération des data Pictures */
     const logementPictures = logementData.map((logementData, pictures) => pictures = logementData.pictures)
-    console.log("Les urls des images du carousel = ", logementPictures[0]);
+    // console.log("Les urls des images du carousel = ", logementPictures[0]);
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const imageNumber = logementPictures[0].length;
-    console.log("Total d'image = ", imageNumber);
+    // console.log("Total d'image = ", imageNumber);
 
     const carouselDownScrolling = () => {
         if (currentIndex < 1) {
