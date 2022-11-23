@@ -17,7 +17,7 @@ const Logement = () => {
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
     console.log("Data global du logement = ", logement)
-    console.log("La note du logement = ", logement.rating)
+    console.log("La note du logement est de ", logement.rating, "/ 5")
 
     return (
         <div>

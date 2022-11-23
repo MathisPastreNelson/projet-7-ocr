@@ -4,7 +4,6 @@ import whiteStar from "../assets/starWhite.png"
 
 const LogementTitle = ({ logementName, logementLocation, tags, logementOwner, logementRating, logementOwnerPhoto }) => {
     const rangeStars = [1, 2, 3, 4, 5];
-    console.log("La note du logement est de ", logementRating, "/ 5")
 
     return <div className="titleContainer">
         <div>
@@ -15,7 +14,6 @@ const LogementTitle = ({ logementName, logementLocation, tags, logementOwner, lo
                     <p className="logementTags" key={tag}>{tag}</p>
                 ))}
             </div>
-
         </div>
         <div className="nameNote">
             <div className="identity">
