@@ -22,8 +22,15 @@ const Logement = () => {
     return (
         <div>
             <Header />
-            <LogementCarousel />
-            <LogementTitle logementName={logement.title} logementLocation={logement.location} tags={logement.tags} logementOwner={logement.host} logementOwnerPhoto={logement.host.picture} logementRating={logement.rating} />
+            <LogementCarousel
+                logementPictures={logement.pictures} />
+            <LogementTitle
+                logementName={logement.title}
+                logementLocation={logement.location}
+                tags={logement.tags}
+                logementOwner={logement.host}
+                logementOwnerPhoto={logement.host.picture}
+                logementRating={logement.rating} />
             <LogementCollapse />
             <Footer />
         </div>
