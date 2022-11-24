@@ -328,7 +328,7 @@ body {
 .identity {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .logementOwner {
@@ -402,12 +402,67 @@ body {
     margin: 0 2px;
   }
 }
-.collapseContainer {
+.logementCollapseContainer {
   width: 90%;
-  max-width: 1400px;
+  max-width: 1450px;
   margin: auto;
-  background-color: salmon;
-  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logementDescriptionContainer {
+  width: 47%;
+}
+
+.logementEquipmentsContainer {
+  width: 47%;
+}
+
+.logementCollapseToggle {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  background-color: #FF6060;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logementToggle-arrow {
+  margin-left: auto;
+}
+
+.logementContent {
+  width: 100%;
+  height: auto;
+  display: none;
+  font-size: 17px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto 0 auto;
+  max-width: 1300px;
+  color: #FF6060;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  padding: 20px 0px;
+  min-height: 130px;
+}
+
+.logementContent p {
+  margin: 0 20px 0 20px;
+}
+
+.logementsItems {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logementShow {
+  display: flex;
 }
 
 .bigFont {

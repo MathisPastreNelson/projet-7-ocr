@@ -16,8 +16,10 @@ const Logement = () => {
     let arrayOfDataLogement = dataList.filter(logement => logement.id === id)
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
-    console.log("Data global du logement = ", logement)
-    console.log("La note du logement est de ", logement.rating, "/ 5")
+    // console.log("Data global du logement = ", logement)
+    // console.log("La note du logement est de ", logement.rating, "/ 5")
+    console.log("Description du produit =", logement.description)
+    console.log("Items du produit =", logement.equipments)
 
     return (
         <div>
@@ -31,7 +33,9 @@ const Logement = () => {
                 logementOwner={logement.host}
                 logementOwnerPhoto={logement.host.picture}
                 logementRating={logement.rating} />
-            <LogementCollapse />
+            <LogementCollapse
+                logementDescription={logement.description}
+                logementEquipments={logement.equipments} />
             <Footer />
         </div>
     );
