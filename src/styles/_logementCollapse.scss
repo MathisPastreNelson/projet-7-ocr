@@ -61,5 +61,19 @@
 
 .logementShow {
     display: flex;
+}
 
+@media (max-width: 768px) {
+    .logementCollapseContainer {
+        flex-direction: column;
+    }
+
+    .logementDescriptionContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logementEquipmentsContainer {
+        width: 100%;
+    }
 }
