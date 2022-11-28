@@ -45,7 +45,7 @@
 // Animation du collapse
 @keyframes slide-in-blurred-top {
     0% {
-        transform: translateY(-50px) scaleY(1.5) scaleX(1);
+        transform: translateY(-50px) scaleY(0) scaleX(1);
         transform-origin: 50% 0%;
         filter: blur(40px);
         opacity: 0;
@@ -61,7 +61,7 @@
 
 .show {
     display: flex;
-    animation: slide-in-blurred-top 0.7s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-top 0.8s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 @media (max-width: 768px) {
