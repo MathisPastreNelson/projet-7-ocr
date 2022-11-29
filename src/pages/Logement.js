@@ -1,11 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 
 import Header from '../components/Header';
 import LogementCarousel from '../components/LogementCarousel';
 import LogementTitle from '../components/LogementTitle';
 import LogementCollapse from '../components/LogementCollapse';
 import Footer from '../components/Footer';
+
+import NotFoundPage from "../pages/NotFound"
 
 import dataList from '../assets/logements.json';
 
@@ -18,8 +20,11 @@ const Logement = () => {
     let logement = arrayOfDataLogement[0]
     // console.log("Data global du logement = ", logement)
     // console.log("La note du logement est de ", logement.rating, "/ 5")
-    console.log("Description du produit =", logement.description)
-    console.log("Items du produit =", logement.equipments)
+    // console.log("Items du produit =", logement.equipments)
+    console.log("Description du produit =", logement)
+
+    // Si les données n'éxistent pas on affiche la page 404
+    if (logement == undefined) return <NotFoundPage />;
 
     return (
         <div>
@@ -37,8 +42,9 @@ const Logement = () => {
                 logementDescription={logement.description}
                 logementEquipments={logement.equipments} />
             <Footer />
-        </div>
-    );
-};
+        </div >
+    )
+}
+
 
 export default Logement;
