@@ -1,14 +1,17 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
+// Importation des composants
 import Header from '../components/Header';
 import LogementCarousel from '../components/LogementCarousel';
 import LogementTitle from '../components/LogementTitle';
 import LogementCollapse from '../components/LogementCollapse';
 import Footer from '../components/Footer';
 
+// Importation de la NotFoundPage utile en cas de logement non trouvé
 import NotFoundPage from "../pages/NotFound"
 
+// Importation des données qui vont devenir des props
 import dataList from '../assets/logements.json';
 
 const Logement = () => {
@@ -21,7 +24,6 @@ const Logement = () => {
     // console.log("Data global du logement = ", logement)
     // console.log("La note du logement est de ", logement.rating, "/ 5")
     // console.log("Items du produit =", logement.equipments)
-    console.log("Description du produit =", logement)
 
     // Si les données n'éxistent pas on affiche la page 404
     if (logement == undefined) return <NotFoundPage />;

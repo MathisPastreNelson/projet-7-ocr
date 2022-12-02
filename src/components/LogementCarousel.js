@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from 'react'
+
+// Importation des images flèches
 import arrowLeft from "../assets/arrowLeft.png"
 import arrowRight from "../assets/arrowRight.png"
 
@@ -11,7 +13,7 @@ const LogementCarousel = ({ logementPictures }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const imageNumber = logementPictures.length;
 
-    // Au clique sur l'arrow nous changeons l'index de l'image
+    // Au clique sur l'arrow nous changeons l'index dans le tableau l'image
     const carouselDownScrolling = () => {
         if (currentIndex < 1) {
             return setCurrentIndex(imageNumber - 1)

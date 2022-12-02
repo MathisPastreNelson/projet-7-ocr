@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
+
+// Importation des données pour affiché les logements
 import dataList from '../assets/logements.json';
 
 const Location = () => {

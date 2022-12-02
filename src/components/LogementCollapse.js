@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from 'react'
+
+// Importation des images flèches
 import arrowUp from '../assets/arrowUp.png'
 import arrowDown from '../assets/arrowDown.png'
 

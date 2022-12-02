@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Importation des composants
 import Header from '../components/Header';
 import BannerAbout from '../components/BannerAbout';
 import Footer from '../components/Footer';

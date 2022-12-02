@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Importation du logo
 import logoFooter from '../assets/logoInvis.png'
 
 const Footer = () => {

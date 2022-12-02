@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Importation des images étoiles
 import salmonStar from "../assets/starSalmon.png"
 import whiteStar from "../assets/starWhite.png"
 
