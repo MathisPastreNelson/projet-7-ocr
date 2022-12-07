@@ -1,4 +1,5 @@
-Installation des modules obligatoire pour démarrer le projet
+- 1 Installation des modules obligatoire pour démarrer le projet
 - npm install
-Démarrage du projet en serveur local
+
+- 2 Démarrage du projet en serveur local
 - npm start
