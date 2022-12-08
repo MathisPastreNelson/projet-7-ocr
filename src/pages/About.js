@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Collapsible from '../components/Collapsible';
 
 const About = () => {
+    // Les props sont envoyées du parent à l'enfant
     return (
         <div>
             <Header />

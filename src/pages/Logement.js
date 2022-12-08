@@ -28,6 +28,7 @@ const Logement = () => {
     // Si les données n'éxistent pas on affiche la page 404
     if (logement == undefined) return <NotFoundPage />;
 
+    // Les props sont envoyées du parent à l'enfant
     return (
         <div>
             <Header />
