@@ -4,6 +4,7 @@ import React from 'react'
 import salmonStar from "../assets/starSalmon.png"
 import whiteStar from "../assets/starWhite.png"
 
+// Récupération des datas via les props
 const LogementTitle = ({ logementName, logementLocation, tags, logementOwner, logementRating, logementOwnerPhoto }) => {
     const rangeStars = [1, 2, 3, 4, 5];
 
