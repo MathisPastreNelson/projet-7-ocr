@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MathisPastreNelson/projet-7-ocr/static/css/main.9b047ce1.css",
+    "main.js": "/MathisPastreNelson/projet-7-ocr/static/js/main.a50cd612.js",
+    "static/media/banner1.png": "/MathisPastreNelson/projet-7-ocr/static/media/banner1.0c5ab2744fc9b4531788.png",
+    "static/media/banner2.png": "/MathisPastreNelson/projet-7-ocr/static/media/banner2.efc1935eb81fc5e585f9.png",
+    "index.html": "/MathisPastreNelson/projet-7-ocr/index.html",
+    "main.9b047ce1.css.map": "/MathisPastreNelson/projet-7-ocr/static/css/main.9b047ce1.css.map",
+    "main.a50cd612.js.map": "/MathisPastreNelson/projet-7-ocr/static/js/main.a50cd612.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b047ce1.css",
+    "static/js/main.a50cd612.js"
+  ]
+}
