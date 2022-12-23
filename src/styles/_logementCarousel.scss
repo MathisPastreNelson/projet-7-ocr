@@ -42,7 +42,7 @@
     margin-top: -50px;
 }
 
-@media (max-width: 1036px) {
+@media only screen and (max-width: 1036) {
     .carouselContainer {
         height: 300px;
     }

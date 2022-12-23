@@ -21,14 +21,10 @@ const Logement = () => {
     let arrayOfDataLogement = dataList.filter(logement => logement.id === id)
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
-    // console.log("Data global du logement = ", logement)
-    // console.log("La note du logement est de ", logement.rating, "/ 5")
-    // console.log("Items du produit =", logement.equipments)
 
     // Si les données n'éxistent pas on affiche la page 404
     if (logement == undefined) return <NotFoundPage />;
 
-    // Les props sont envoyées du parent à l'enfant
     return (
         <div>
             <Header />

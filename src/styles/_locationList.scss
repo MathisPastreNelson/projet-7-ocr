@@ -45,7 +45,7 @@
     padding: 0 10px;
 }
 
-@media (max-width: 1036px) {
+@media only screen and (max-width: 1036px) {
     .locationContainer {
         background-color: white;
         width: 90%;

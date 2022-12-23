@@ -89,7 +89,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 1036px) {
+@media only screen and (max-width: 1036px) {
     .titleContainer {
         flex-direction: column;
     }
