@@ -167,18 +167,28 @@ body {
   }
 }
 .collapsible__container {
-  margin: 30px auto;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.aboutCollapse__Container {
+  width: 75%;
+  max-width: 1300px;
+  margin: 25px auto 50px auto;
+}
+
+.aboutCollapse__Size {
+  margin: 20px auto;
 }
 
 .toggle {
-  width: 75%;
-  padding: 10px 20px;
+  width: 100%;
+  padding: 10px 1rem;
   margin: 0 auto;
   display: flex;
-  max-width: 1300px;
   background-color: #FF6060;
   color: white;
-  font-size: 23px;
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   align-items: center;
@@ -192,22 +202,20 @@ body {
 }
 
 .content {
-  width: 75%;
   height: auto;
   display: none;
-  font-size: 24px;
+  font-size: 15px;
   justify-content: center;
   border-radius: 0 0 10px 10px;
-  margin: 0 auto 20px auto;
-  max-width: 1300px;
+  margin: 0 auto 10px auto;
   color: #FF6060;
   background-color: #f7f7f7;
 }
 
 .content p {
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @-webkit-keyframes slide-in-blurred-top {
@@ -246,13 +254,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .aboutCollapse__Container {
+    width: 90%;
+  }
   .toggle {
     font-size: 17px;
-    width: 90%;
   }
   .content {
     font-size: 15px;
-    width: 90%;
+  }
+  .aboutCollapse__Container {
+    margin: 25px auto 30px auto;
   }
 }
 .carouselContainer {
@@ -423,37 +435,48 @@ body {
     width: 50px;
     height: 50px;
   }
+  .logementOwner {
+    width: 70px;
+  }
   .starContainer {
     margin-bottom: 0;
   }
   .salmonStar {
-    width: 28px;
+    width: 25px;
     margin: 0 2px;
   }
   .whiteStar {
-    width: 28px;
+    width: 25px;
     margin: 0 2px;
   }
 }
 .logementCollapseContainer {
-  width: 90%;
-  max-width: 1450px;
-  margin: auto;
+  width: 47%;
   margin-bottom: 20px;
   display: flex;
+}
+
+.logementGeneral__container {
+  display: flex;
+  max-width: 1450px;
+  width: 90%;
   justify-content: space-between;
+  margin: auto;
 }
 
-.logementDescriptionContainer {
-  width: 47%;
+.itemList__container {
+  padding: 0;
+  margin-right: auto;
+  margin-left: 2rem;
 }
 
-.logementEquipmentsContainer {
-  width: 47%;
+.itemList {
+  list-style: none;
+  display: flex;
 }
 
 .logementCollapseToggle {
-  width: 100%;
+  width: 45%;
   padding: 10px 20px;
   display: flex;
   background-color: #FF6060;
@@ -541,6 +564,19 @@ body {
   }
   .logementEquipmentsContainer {
     width: 100%;
+  }
+  .logementCollapseContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  .logementGeneral__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1450px;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
   }
 }
 .bigFont {

@@ -4,10 +4,10 @@ import React from 'react'
 import logoFooter from '../assets/logoInvis.png'
 
 const Footer = () => {
-    return <div className="footerContainer">
+    return <footer className="footerContainer">
         <img className="logoFooter" src={logoFooter} alt="" />
         <p className="pFooter">© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
 }
 
 export default Footer;

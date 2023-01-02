@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import LogementCarousel from '../components/LogementCarousel';
 import LogementTitle from '../components/LogementTitle';
-import LogementCollapse from '../components/LogementCollapse';
 import Footer from '../components/Footer';
 
 // Importation de la NotFoundPage utile en cas de logement non trouvé
@@ -13,6 +12,7 @@ import NotFoundPage from "../pages/NotFound"
 
 // Importation des données qui vont devenir des props
 import dataList from '../assets/logements.json';
+import Collapsible from '../components/Collapsible';
 
 const Logement = () => {
     /* Récupération de l'ID grâce à l'URL */
@@ -21,6 +21,9 @@ const Logement = () => {
     let arrayOfDataLogement = dataList.filter(logement => logement.id === id)
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
+    const minHeight = {
+        minHeight: '110px'
+    };
 
     // Si les données n'éxistent pas on affiche la page 404
     if (logement == undefined) return <NotFoundPage />;
@@ -37,9 +40,24 @@ const Logement = () => {
                 logementOwner={logement.host}
                 logementOwnerPhoto={logement.host.picture}
                 logementRating={logement.rating} />
-            <LogementCollapse
-                logementDescription={logement.description}
-                logementEquipments={logement.equipments} />
+
+            <div className='logementGeneral__container'>
+                <div className="logementCollapseContainer">
+                    <Collapsible
+                        label='Description'>
+                        <p style={minHeight}>{logement.description}.</p>
+                    </Collapsible>
+                </div >
+                <div className="logementCollapseContainer">
+                    <Collapsible
+                        label='Equipements'>
+                        <ul style={minHeight} className='itemList__container'>
+                            {logement.equipments.map((item) => <li className='itemList'>{item}</li>)}
+                        </ul>
+                    </Collapsible>
+                </div>
+            </div>
+
             <Footer />
         </div >
     )

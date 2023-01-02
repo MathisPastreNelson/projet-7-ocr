@@ -1,22 +1,30 @@
 .logementCollapseContainer {
-    width: 90%;
-    max-width: 1450px;
-    margin: auto;
+    width: 47%;
     margin-bottom: 20px;
     display: flex;
+}
+
+.logementGeneral__container {
+    display: flex;
+    max-width: 1450px;
+    width: 90%;
     justify-content: space-between;
+    margin: auto;
 }
 
-.logementDescriptionContainer {
-    width: 47%;
+.itemList__container {
+    padding: 0;
+    margin-right: auto;
+    margin-left: 2rem;
 }
 
-.logementEquipmentsContainer {
-    width: 47%;
+.itemList {
+    list-style: none;
+    display: flex;
 }
 
 .logementCollapseToggle {
-    width: 100%;
+    width: 45%;
     padding: 10px 20px;
     display: flex;
     background-color: #FF6060;
@@ -94,5 +102,20 @@
 
     .logementEquipmentsContainer {
         width: 100%;
+    }
+
+    .logementCollapseContainer {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    .logementGeneral__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1450px;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
     }
 }

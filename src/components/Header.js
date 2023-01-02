@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom'
 import logo from '../assets/logoSalmon.png'
 
 const Header = () => {
-    return <div className="headerKasa">
+    return <header className="headerKasa">
         <img className="logoHeader" src={logo} alt="" />
         <div className="navLinkHeader">
             <NavLink className="navLinkHeader-nav" to="/">Accueil</NavLink>
             <NavLink className="navLinkHeader-nav" to="/about">A Propos</NavLink>
         </div>
-    </div>
+    </header>
 }
 
 export default Header;
