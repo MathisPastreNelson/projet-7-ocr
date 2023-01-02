@@ -52,7 +52,7 @@ const Logement = () => {
                     <Collapsible
                         label='Equipements'>
                         <ul style={minHeight} className='itemList__container'>
-                            {logement.equipments.map((item) => <li className='itemList'>{item}</li>)}
+                            {logement.equipments.map((item) => <li key={item} className='itemList'>{item}</li>)}
                         </ul>
                     </Collapsible>
                 </div>
