@@ -21,6 +21,7 @@ const Logement = () => {
     let arrayOfDataLogement = dataList.filter(logement => logement.id === id)
     // Suppression de l'array pour sortir des datas sans le [0]
     let logement = arrayOfDataLogement[0]
+    // Définition de la taille pour le composant Collapse  
     const minHeight = {
         minHeight: '110px'
     };
